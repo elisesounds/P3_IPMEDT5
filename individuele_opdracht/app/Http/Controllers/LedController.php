@@ -27,4 +27,8 @@ class LedController extends Controller
 
         return redirect("/");
     }
+
+    public function get_led_state() {
+        return Led::first()->led_is_on;
+    }
 }
