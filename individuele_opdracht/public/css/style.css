@@ -1,0 +1,25 @@
+  /* --color-primary: #BB86FC;
+  --color-primary-variant: #3700B3;
+  --color-secondary: #03DAC6;
+  --color-background: #121212
+  --color-error: #CF6679;
+  --color-white: #f7f7f7; */
+
+body {
+  background-color: #121212;
+  color: #f7f7f7;
+  font-family: "Inter", sans-serif;
+  margin: 2vh 30vw;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #BB86FC;
+}
+
+a {
+  color: #BB86FC;
+}
+
+a:active {
+  color: #3700B3;
+}
