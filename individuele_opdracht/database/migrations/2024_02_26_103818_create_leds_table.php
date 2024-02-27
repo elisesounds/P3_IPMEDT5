@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('leds', function (Blueprint $table) {
             $table->id();
-            $table->boolean("led_is_on"); //true of false
+            $table->integer("led_is_on"); //true of false
             $table->timestamps();
         });
     }

@@ -14,7 +14,7 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         DB::table("leds")->insert([
-            "led_is_on" => false,
+            "led_is_on" => 0,
         ]);
 
         DB::table("counts")->insert([
