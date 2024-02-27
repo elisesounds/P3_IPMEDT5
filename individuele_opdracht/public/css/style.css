@@ -9,7 +9,7 @@ body {
   background-color: #121212;
   color: #f7f7f7;
   font-family: "Inter", sans-serif;
-  margin: 5vh 30vw;
+  margin: 10vh 20vw;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -17,9 +17,43 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: #BB86FC;
+  text-decoration: none;
 }
 
-a:active {
-  color: #3700B3;
+article {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 10vh;
+}
+
+section {
+  background-color: #0b0b0b;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.button-styled {
+  background-color: #3700B3;
+  color: #f7f7f7;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+}
+
+.button-styled:hover {
+  background-color: #BB86FC;
+}
+
+/* responsive */
+@media screen and (max-width: 800px) {
+  article {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 2vh 5vw;
+  }
 }

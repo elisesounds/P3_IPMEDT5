@@ -10,10 +10,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Welkom IPMEDT5!</h1>
-
-  <p>times pressed {{$count->times_pressed}}</p>
-  <p>led state is {{$led->led_is_on}}</p>
-  <a href="toggle_led">KLIK HIER VOOR LED CHANGE</a>
+  <h1>Dashboard individuele opdracht IPMEDT5</h1>
+  <p>Gemaakt februari 2024</p>
+  <article>
+    <section>
+      <b>Aantal keer knop gedrukt</b>
+      <p>{{$count->times_pressed}}</p>
+    </section>
+    <section>
+      <b>Led state is</b>
+      <p>{{$led->led_is_on}}</p>
+    </section>
+    <section>
+      <b>Toggle de led</b>
+      <p><a class="button-styled" href="toggle_led">TOGGLE</a></p>
+    </section>
+  </article>
 </body>
 </html>
